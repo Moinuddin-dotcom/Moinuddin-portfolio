@@ -25,9 +25,11 @@ const ProjectsDetails = () => {
         potentialImprovements,
     } = cardsDes;
     useEffect(() => {
-        const findCardsDescription = projectData.find(card => card.id === parseInt(id))
-        setCardsDes(findCardsDescription)
-    }, [projectData, id])
+        console.log(Array.isArray(projectData)); // Check if it's an array
+        const findCardsDescription = projectData?.find(card => card.id === parseInt(id));
+        setCardsDes(findCardsDescription);
+    }, [projectData, id]);
+    
     return (
         <div className="max-w-[90vw] mx-auto">
             <div className="flex justify-center">

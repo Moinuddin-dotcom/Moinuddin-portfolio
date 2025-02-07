@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Projects = () => {
     const [projects, setProjects] = useState([])
     const projectsData = async () => {
-        const data = await fetch('/public/MyWork.json')
+        const data = await fetch('MyWork.json')
         const res = await data.json()
         setProjects(res)
         console.log(res)

@@ -44,7 +44,7 @@ export const Router = createBrowserRouter([
             },
             {
                 path: "/project-details/:id",
-                loader: () => fetch('/public/MyWork.json'),
+                loader: () => fetch('/MyWork.json'),
                 element: <ProjectsDetails />
             },
         ]
