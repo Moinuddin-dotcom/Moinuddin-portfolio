@@ -6,7 +6,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import InfoIcon from "@mui/icons-material/Info";
 import WorkIcon from "@mui/icons-material/Work";
-
+import navImg from '../../../src/assets/Logo.webp'
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
@@ -21,9 +21,11 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="poppins max-w-[80vw] mx-auto flex items-center justify-between px-6 py-4 rounded-2xl bg-purple-950/85 border-2 fixed z-10 w-full left-8 md:left-20 lg:left-30 xl:left-36">
+    <div className="poppins max-w-[80vw] mx-auto flex items-center justify-between px-6 py-3 rounded-2xl bg-purple-950/85 border-2 fixed z-10 w-full left-8 md:left-20 lg:left-30 xl:left-36">
       {/* Logo */}
-      <div className="text-xl font-bold text-white w-full">Moin</div>
+      <div className="text-xl font-bold text-white w-full">
+        <img src={navImg} alt="" className="w-[100px] h-[50px] rounded-2xl" />
+      </div>
 
       {/* Menu Icon */}
       <button onClick={() => setOpen(true)} className="text-gray-700 cursor-pointer">

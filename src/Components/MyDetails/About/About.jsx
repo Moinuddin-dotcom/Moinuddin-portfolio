@@ -35,7 +35,7 @@ const About = () => {
                                 Hey there! 👋
                             </Typography>
                             <Typography className="text-gray-600 mt-2">
-                                A passionate <strong>Full Stack Developer</strong> who started coding in <strong>2023</strong>.
+                                A passionate <strong>Front-End Developer</strong> who started coding in <strong>2023</strong>.
                                 The journey began with learning from <strong>CodeWithHarry</strong>, followed by structured learning
                                 at <strong>Programming Hero</strong> for six months.
                             </Typography>

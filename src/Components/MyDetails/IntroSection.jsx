@@ -46,7 +46,7 @@ const IntroSection = () => {
           >
             <h1 className="text-xl font-semibold underline">
 
-              I am a Full Stack Developer
+              I am a Front-End Developer
             </h1>
           </motion.h1>
 
