@@ -1,12 +1,13 @@
 import { DockTwoTone } from "@mui/icons-material";
 import { Button, Stack } from "@mui/material";
 import { motion } from "framer-motion"
+import { TypeAnimation } from "react-type-animation";
 
 const IntroSection = () => {
-    const textVariants = {
-        hidden: { opacity: 0 },
-        visible: { opacity: 1 },
-      };
+  // const textVariants = {
+  //   hidden: { opacity: 0 },
+  //   visible: { opacity: 1 },
+  // };
   return (
     <div className="bg-purple-950/25 grid grid-cols-1 md:grid-cols-2 justify-between px-10 gap-4">
       <div className="self-center">
@@ -36,7 +37,7 @@ const IntroSection = () => {
           >Md. MoinUddin Chowdhury</motion.span> </p>
         </div>
         <div className="text-start border-2 bg-blue-950/55 mt-5 px-2 py-2 rounded-xl">
-          <motion.h1
+          {/* <motion.h1
             initial="hidden"
             animate="visible"
             variants={textVariants}
@@ -62,13 +63,31 @@ const IntroSection = () => {
 
               Learning Next.js
             </h1>
-          </motion.h1>
+          </motion.h1> */}
+          <TypeAnimation sequence={[
+            'Hey this is moin', 1000,
+            'I am a front-end developer', 1000,
+            'I am learning Next.js', 1000
+          ]}
+            wrapper="span"
+            speed={50}
+            style={{ fontSize: '2em', display: 'inline-block' }}
+            repeat={Infinity}
+          />
         </div>
+        {/* <div>
+         
+
+        </div> */}
         <div className="mt-8">
           <Stack spacing={2} direction="row">
             {/* <Button variant="text">Text</Button> */}
-            <Button variant="contained" className="px-5 py-10">Learn more</Button>
-            <Button variant="outlined" className="px-5 py-10">Get Resume</Button>
+            <Button variant="contained" className="px-5 py-10">
+              <a href="https://drive.google.com/file/d/1SmewR-iHLFZJAfXfXLRZ9wwjisNemk2T/view?usp=drive_link">See Resume</a>
+            </Button>
+            <Button variant="outlined" className="px-5 py-10">
+              <a href="/src/assets/ResumeOfMoinuddin.pdf" download={"ResumeOfMoinuddin.pdf"}>Get Resume</a>
+            </Button>
           </Stack>
         </div>
       </div>

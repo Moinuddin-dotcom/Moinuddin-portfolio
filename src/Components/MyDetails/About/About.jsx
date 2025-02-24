@@ -10,7 +10,7 @@ const About = () => {
             <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                whileHover={{ scale: 1.05 }} 
+                whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
                 className={`w-full shadow-fuchsia-900 max-w-3xl mb-6 ${className}`}
             >
@@ -101,6 +101,9 @@ const About = () => {
             </div>
         </div>
     )
+
 }
+
+
 
 export default About
